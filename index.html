@@ -10,7 +10,7 @@
 <body >
   <div id = "container">
 
-  <img id = 'bulb' src="img/off.png" alt=""  class="center">
+  <img id = 'bulb' src="./img/off.png" alt=""  class="center">
   <button id = "onoff" class="center1">Turn on</button>
   <a href="https://www.instagram.com/code_with_zoti/">Created by Jyoti D.</a>
 </div>
@@ -24,12 +24,12 @@
 
    function funct(){
       if(bulb.src.match("on")){
-        bulb.src ='img/off.png'
+        bulb.src ='./img/off.png'
         btn.textContent="Turn On"
         btn.style.backgroundColor = 'green';
         }
       else {
-         bulb.src="img/on.png"
+         bulb.src="./img/on.png"
          btn.textContent="Turn Off"
          btn.style.backgroundColor= "red"
          
