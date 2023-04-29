@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulb-On-Off</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body >
+  <div id = "container">
+
+  <img id = 'bulb' src="img/off.png" alt=""  class="center">
+  <button id = "onoff" class="center1">Turn on</button>
+  <a href="https://www.instagram.com/code_with_zoti/">Created by Jyoti D.</a>
+</div>
+  <script>
+    
+    let btn = document.getElementById("onoff")
+   
+    let bulb = document.getElementById('bulb')
+   
+    btn.addEventListener('click', funct)
+
+   function funct(){
+      if(bulb.src.match("on")){
+        bulb.src ='img/off.png'
+        btn.textContent="Turn On"
+        btn.style.backgroundColor = 'green';
+        }
+      else {
+         bulb.src="img/on.png"
+         btn.textContent="Turn Off"
+         btn.style.backgroundColor= "red"
+         
+       }
+
+     }
+
+  </script>
+</body>
+</html>
